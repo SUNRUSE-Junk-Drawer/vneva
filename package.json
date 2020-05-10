@@ -32,5 +32,11 @@
     "buildNyc": "nyc --check-coverage --all --exclude \"**/*-unit.*\" --exclude \"build/**/*\" --exclude \"publish/**/*\" --lines 100 --functions 100 --branches 100 --statements 100 npm run-script buildJasmineUnit",
     "test": "npm-run-all buildClean buildTypeScript buildNyc",
     "lint": "eslint \"**/*.ts\""
-  }
+  },
+  "files": [
+    "**/*.js",
+    "**/*.d.ts",
+    "!**/*-unit.js",
+    "!**/*-unit.d.ts"
+  ]
 }

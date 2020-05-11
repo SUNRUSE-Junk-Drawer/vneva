@@ -17,7 +17,7 @@ jobs:
     - run: npm run-script buildTypeScript
     - run: npm run-script buildNyc
   release:
-    if: github.ref == 'refs/heads/master' && github.repository == 'jameswilddev/vneva'
+    if: github.ref == 'refs/heads/production' && github.repository == 'jameswilddev/vneva'
     needs: build
     runs-on: ubuntu-18.04
     steps:

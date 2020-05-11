@@ -6,7 +6,10 @@ type ExtractedNames = {
     | `declaredSceneNames`
     | `referencedSceneNames`
     | `sceneNames`
-    | `emoteNames`]: { readonly [fileName: string]: ReadonlyArray<NameForm> };
+    | `emoteNames`
+    | `backgroundNames`]: {
+    readonly [fileName: string]: ReadonlyArray<NameForm>;
+  };
 };
 
 export default ExtractedNames;

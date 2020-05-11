@@ -94,6 +94,15 @@ describe(`lexer`, () => {
             },
           ],
         });
+
+        includes(`background names`, `backgroundNames`, {
+          "test-background-name": [
+            {
+              writtenAs: `Test Background Name`,
+              lineNumberOfFirstOccurrence: 15,
+            },
+          ],
+        });
       });
     });
   });
